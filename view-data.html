@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amikom Magang Web - Pendaftaran</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .filter {
+      margin: 10px 0 20px;
+    }
+    .filter label {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    .filter select {
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      text-align: left;
+      padding: 10px;
+      border-bottom: 1px solid #e2b9b9;
+    }
+    th {
+      background: #f3dbdb;
+    }
+  </style>
+    
+</head>
+<style>
+    
+</style>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <div class="sidebar-button">
+
+                <a class="logo">Amikom Magang Web</a>
+                <a href="dasboard.html" class="menu-item">Dashboard</a>
+                <a href="approval-magang.html" class="menu-item">Approval Magang</a>
+                <a href="bimbingan.html" class="menu-item">Bimbingan</a>
+                <a href="laporan-magang.html"  class="menu-item">Laporan Magang</a>
+                <a href="penilaian-perusahaan.html" class="menu-item">Penilaian Perusahaan</a>
+                <a href="cetak-sertifikat.html" class="menu-item">Cetak Sertifikat</a>
+                <a class="menu-item active">View Data</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+    <h1 class="form-title">View Data</h1>
+
+ <div class="filter">
+    <label for="prodi">Prodi:</label>
+    <select id="prodi">
+      <option>Teknik Informatika</option>
+      <option>Sistem Informasi</option>
+      <option>Manajemen Informatika</option>
+    </select>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nama Mahasiswa</th>
+        <th>NIM</th>
+        <th>Status Magang</th>
+        <th>Nilai Perusahaan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Gibran Muhammad Ardan</td>
+        <td>24.01.5134</td>
+        <td>Selesai</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <td>Rudiger</td>
+        <td>12345678</td>
+        <td>Diproses</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Anthony</td>
+        <td>98765432</td>
+        <td>Selesai</td>
+        <td>88</td>
+      </tr>
+      <tr>
+        <td>Darwin</td>
+        <td>01234567</td>
+        <td>Selesai</td>
+        <td>85</td>
+      </tr>
+      <tr>
+        <td>Onana</td>
+        <td>87654321</td>
+        <td>Belum lolos</td>
+        <td>-</td>
+      </tr>
+    </tbody>
+  </table>  
+    
+</body>
+<script src="../navigation.js"></script>
+</html>

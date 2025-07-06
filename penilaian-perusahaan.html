@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amikom Magang Web - Pendaftaran</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .info {
+      margin-bottom: 15px;
+    }
+    .form-nilai {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .form-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px 15px;
+    }
+    .form-row select {
+      border: none;
+      background: transparent;
+      font-size: 14px;
+    }
+    .submit-btn {
+      background: #4b0082;
+      color: #fff;
+      padding: 10px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+    
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <div class="sidebar-button">
+
+                <a class="logo">Amikom Magang Web</a>
+                <a href="dasboard.html" class="menu-item">Dashboard</a>
+                <a href="approval-magang.html" class="menu-item">Approval Magang</a>
+                <a href="bimbingan.html" class="menu-item">Bimbingan</a>
+                <a href="laporan-magang.html"  class="menu-item">Laporan Magang</a>
+                <a class="menu-item active">Penilaian Perusahaan</a>
+                <a href="cetak-sertifikat.html" class="menu-item">Cetak Sertifikat</a>
+                <a href="view-data.html" class="menu-item">View Data</a>
+            </div>
+        </div>
+    </div>
+
+   <div class="main-content">
+    <h1 class="form-title">Penilaian Perusahaan</h1>
+
+<div class="info">
+    <div><strong>Gibran Muhammad Ardan</strong></div>
+    <div>NIM 24.01.5134</div>
+  </div>
+
+  <p>Form Nilai</p>
+
+  <div class="form-nilai">
+    <div class="form-row">
+      <span>Kedisiplinan</span>
+      <select>
+        <option>Sangat Baik</option>
+        <option>Baik</option>
+        <option>Cukup</option>
+        <option>Kurang</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <span>Tanggung Jawab</span>
+      <select>
+        <option>Sangat Baik</option>
+        <option>Baik</option>
+        <option>Cukup</option>
+        <option>Kurang</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <span>Keahlian</span>
+      <select>
+        <option>Sangat Baik</option>
+        <option>Baik</option>
+        <option>Cukup</option>
+        <option>Kurang</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <span>Inisiatif</span>
+      <select>
+        <option>Sangat Baik</option>
+        <option>Baik</option>
+        <option>Cukup</option>
+        <option>Kurang</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <span>Kerja Sama</span>
+      <select>
+        <option>Sangat Baik</option>
+        <option>Baik</option>
+        <option>Cukup</option>
+        <option>Kurang</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <span>Komunikasi</span>
+      <select>
+        <option>Sangat Baik</option>
+        <option>Baik</option>
+        <option>Cukup</option>
+        <option>Kurang</option>
+      </select>
+    </div>
+  </div>
+
+  <button class="submit-btn">Submit</button>
+
+</div>
+
+
+
+    
+</body>
+<script src="../navigation.js"></script>
+</html>

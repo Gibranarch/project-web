@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amikom Magang Web - Pendaftaran</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <div class="sidebar-button">
+
+                <a class="logo">Amikom Magang Web</a>
+                <a class="menu-item active">Dashboard</a>
+                <a href="approval-magang.html" class="menu-item">Approval Magang</a>
+                <a href="bimbingan.html" class="menu-item">Bimbingan</a>
+                <a href="laporan-magang.html"  class="menu-item">Laporan Magang</a>
+                <a href="penilaian-perusahaan.html" class="menu-item">Penilaian Perusahaan</a>
+                <a href="cetak-sertifikat.html" class="menu-item">Cetak Sertifikat</a>
+                <a href="view-data.html" class="menu-item">View Data</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="form-container">
+            <h1 class="form-title">Pendaftaran Magang</h1>
+            
+            <form id="internshipForm">
+                <div class="form-section">
+                    <div class="section-title">Data Pribadi</div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nama">Nama</label>
+                            <input type="text" id="nama" name="nama" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="nim">NIM</label>
+                            <input type="text" id="nim" name="nim" value="24.01.5134" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="program">Program Studi</label>
+                            <input type="text" id="program" name="program" value="D3 Teknik Informatika" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="section-title">Data Perusahaan</div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="perusahaan">Nama Perusahaan</label>
+                            <input type="text" id="perusahaan" name="perusahaan" value="Nvidia" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="alamat">Alamat</label>
+                            <input type="text" id="alamat" name="alamat" value="Jalan Masa Depan No.10" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="divisi">Divisi</label>
+                            <input type="text" id="divisi" name="divisi" value="Pengembangan Web" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="section-title">Dokumen Pendukung</div>
+                    <div class="form-group full-width">
+                        <label>Dokumen Perusahaan</label>
+                        <div class="file-upload" onclick="document.getElementById('fileInput').click()">
+                            <div class="file-upload-icon">📄</div>
+                            <div class="file-upload-text">Unggah PDF</div>
+                            <div class="file-upload-size">Maksimal ukuran dokumen 2 MB</div>
+                        </div>
+                        <input type="file" id="fileInput" accept=".pdf" style="display: none;">
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Ajukan Pendaftaran</button>
+                <div style="clear: both;"></div>
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+<script src="script.js"></script>
+</html>

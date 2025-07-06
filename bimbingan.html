@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amikom Magang Web - Pendaftaran</title>
+    <link rel="stylesheet" href="bootstrap.css">
+      <style>
+
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .search-container {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    .search-box {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      padding: 5px 10px;
+      border-radius: 6px;
+      width: 200px;
+    }
+    .search-box input {
+      border: none;
+      outline: none;
+      flex: 1;
+    }
+    .pembimbing-card {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    .pembimbing-info {
+      flex: 1;
+    }
+    .pembimbing-info b {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .pembimbing-card img {
+      width: 60px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+    .komentar-section {
+      margin-bottom: 10px;
+    }
+    .komentar-box {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 5px;
+      padding: 8px;
+    }
+    .komentar-box b {
+      display: block;
+      margin-bottom: 4px;
+    }
+    .input-container {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .input-container input {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .input-container button {
+      background-color: #4b0082;
+      color: #fff;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+    
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <div class="sidebar-button">
+
+                <a class="logo">Amikom Magang Web</a>
+                <a href="dasboard.html" class="menu-item">Dashboard</a>
+                <a href="approval-magang.html" class="menu-item">Approval Magang</a>
+                <a class="menu-item active">Bimbingan</a>
+                <a href="laporan-magang.html"  class="menu-item">Laporan Magang</a>
+                <a href="penilaian-perusahaan.html" class="menu-item">Penilaian Perusahaan</a>
+                <a href="cetak-sertifikat.html" class="menu-item">Cetak Sertifikat</a>
+                <a href="view-data.html" class="menu-item">View Data</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+    <h1 class="form-title">Bimbingan</h1>
+
+     <div class="search-container">
+    <div class="search-box">
+      🔍
+      <input type="text" placeholder="Search" />
+      ☰
+    </div>
+  </div>
+
+  <div class="pembimbing-card">
+    <div class="pembimbing-info">
+      <b>Nama Pembimbing</b>
+      Zlatan Ibrahimovic <br />
+      Zlatan@nvidia.ac.id
+    </div>
+    <img src="Zlatan.jpg" alt="Foto Pembimbing" />
+  </div>
+
+  <div class="komentar-section">
+    <div class="komentar-box">
+      <b>NIM 98765432 Anthony</b>
+      Izin konsultasi terkait penentuan topik penelitian
+    </div>
+    <div class="komentar-box">
+      <b>Zlatan Ibrahimovic</b>
+      Ya, topik penelitian sudah relevan.
+    </div>
+    <div class="komentar-box">
+      <b>NIM 98765432 Anthony</b>
+      Baik, terima kasih.
+    </div>
+  </div>
+
+  <div class="input-container">
+    <input type="text" placeholder="Tulis Komentar" />
+    <button>Kirim</button>
+  </div>
+
+    
+</body>
+<script src="../navigation.js"></script>
+</html>

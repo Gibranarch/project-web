@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amikom Magang Web - Pendaftaran</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .search-container {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .search-box {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      padding: 5px 10px;
+      border-radius: 6px;
+      width: 200px;
+    }
+    .search-box input {
+      border: none;
+      outline: none;
+      flex: 1;
+    }
+    .status-filter {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 5px 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      text-align: left;
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+    th {
+      background: #f5f5f5;
+    }
+    .status {
+      padding: 4px 10px;
+      border-radius: 6px;
+      color: #fff;
+      display: inline-block;
+    }
+    .proses {
+      background: #aaa;
+    }
+    .setujui {
+      background: #2ecc71;
+    }
+    .revisi {
+      background: #f1c40f;
+      color: #333;
+    }
+    .tolak {
+      background: #e74c3c;
+    }
+  </style>
+    
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <div class="sidebar-button">
+
+                <a class="logo">Amikom Magang Web</a>
+                <a href="dasboard.html" class="menu-item">Dashboard</a>
+                <a class="menu-item active">Approval Magang</a>
+                <a href="bimbingan.html" class="menu-item">Bimbingan</a>
+                <a href="laporan-magang.html"  class="menu-item">Laporan Magang</a>
+                <a href="penilaian-perusahaan.html" class="menu-item">Penilaian Perusahaan</a>
+                <a href="cetak-sertifikat.html" class="menu-item">Cetak Sertifikat</a>
+                <a href="view-data.html" class="menu-item">View Data</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1 class="form-title">Approval Magang</h1>
+    
+  <div class="search-container">
+    <div class="search-box">
+      🔍
+      <input type="text" placeholder="Search" />
+      ☰
+    </div>
+    <select class="status-filter">
+      <option>Semua status</option>
+      <option>Proses</option>
+      <option>Setujui</option>
+      <option>Revisi</option>
+      <option>Tolak</option>
+    </select>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nama Mahasiswa</th>
+        <th>NIM</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Rudiger</td>
+        <td>12345678</td>
+        <td><span class="status proses">Proses</span></td>
+      </tr>
+      <tr>
+        <td>Anthony</td>
+        <td>98765432</td>
+        <td><span class="status setujui">Setujui</span></td>
+      </tr>
+      <tr>
+        <td>Darwin</td>
+        <td>01234567</td>
+        <td><span class="status revisi">Revisi</span></td>
+      </tr>
+      <tr>
+        <td>Onana</td>
+        <td>87654321</td>
+        <td><span class="status tolak">Tolak</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+    
+</body>
+<script src="../navigation.js"></script>
+</html>

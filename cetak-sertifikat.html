@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amikom Magang Web - Pendaftaran</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        .sertif {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+        }
+
+        .mendatar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .vertical {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mendatar img {
+            width: 20%;
+        }
+
+        .download-btn {
+            background: #4b0082;
+            color: #fff;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <div class="sidebar-button">
+
+                <a class="logo">Amikom Magang Web</a>
+                <a href="dasboard.html" class="menu-item">Dashboard</a>
+                <a href="approval-magang.html" class="menu-item">Approval Magang</a>
+                <a href="bimbingan.html" class="menu-item">Bimbingan</a>
+                <a href="laporan-magang.html"  class="menu-item">Laporan Magang</a>
+                <a href="penilaian-perusahaan.html" class="menu-item">Penilaian Perusahaan</a>
+                <a class="menu-item active">Cetak Sertifikat</a>
+                <a href="view-data.html" class="menu-item">View Data</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+    <h1 class="form-title">Cetak Sertifikat</h1>
+
+    <div class="sertif border rounded p-4 text-center" style="max-width: 400px; margin: auto;">
+        <h3 class="fw-bold">SERTIFIKAT</h3>
+        <p class="fw-bold mb-0">Gibran Muhammad Ardan</p>
+        <p>Inovasi Solusi Digital</p>
+        <p class="mb-0">Nilai Akhir</p>
+        <h2 class="fw-bold">90,00</h2>
+
+        <div class="mendatar">
+            <div class="vertical">
+                <img src="https://home.amikom.ac.id/brandguideline/assets/download/Logo%20Universitas%20Amikom%20Yogyakarta/svg/Logo%20Gram.svg" alt="Logo Amikom" style="height: 50px; margin: 10px;">
+                <div>Universitas Amikom Yogyakarta</div>
+            </div>
+            <img src="https://i.pinimg.com/736x/f0/a9/93/f0a993fdc4e1d81651f1d820c746fc3f.jpg" alt="">
+        </div>
+        
+    </div>
+
+    <div class="text-center mt-3">
+        <button class="download-btn">Download PDF</button>
+    </div>
+</div>
+
+
+
+    
+</body>
+<script src="../navigation.js"></script>
+</html>
